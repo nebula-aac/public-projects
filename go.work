@@ -3,4 +3,5 @@ go 1.21.0
 use (
 	./simple-fx
 	./simple-google-wire
+	./simple-gqlgen-chi
 )
