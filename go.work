@@ -1,6 +1,7 @@
 go 1.21.0
 
 use (
+	./genclientex
 	./simple-echo-wire
 	./simple-fx
 	./simple-google-wire
