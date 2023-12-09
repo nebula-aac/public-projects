@@ -1,0 +1,43 @@
+interface Warrior {
+  fight: String!
+  sneak: String!
+}
+
+type Weapon {
+  hit: String!
+}
+
+type ThrowableWeapon {
+  throw: String!
+}
+
+type Ninja implements Warrior {
+  name: String
+  rank: String
+  fight: String!
+  sneak: String!
+  hit: Weapon
+  throw: ThrowableWeapon
+}
+
+type Query {
+  findNinja(name: String!): Ninja
+  returnAllNinjas: [Ninja]!
+}
+
+type Mutation {
+  registerNewNinja(input: NewNinjaInput!): ResponseMessage
+}
+
+input NewNinjaInput {
+  name: String
+  rank: String
+  fight: String!
+  sneak: String!
+  hit: String
+  throw: String
+}
+
+type ResponseMessage {
+  message: String!
+}
