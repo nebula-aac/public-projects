@@ -3,9 +3,11 @@
 
 package main
 
-import "github.com/google/wire"
+import (
+	"github.com/google/wire"
+)
 
 func InitializeEcho() App {
-	wire.Build(NewEcho, NewApp)
+	wire.Build(NewEcho, NewApp, NewLogger, NewEchoHandler)
 	return App{}
 }

@@ -9,7 +9,9 @@ package main
 // Injectors from wire.go:
 
 func InitializeEcho() App {
-	echo := NewEcho()
-	app := NewApp(echo)
+	logger := NewLogger()
+	echo := NewEcho(logger)
+	echoHandler := NewEchoHandler(logger)
+	app := NewApp(logger, echo, echoHandler)
 	return app
 }
