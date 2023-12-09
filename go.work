@@ -1,6 +1,7 @@
 go 1.21.0
 
 use (
+	./simple-echo-wire
 	./simple-fx
 	./simple-google-wire
 	./simple-gqlgen-chi
