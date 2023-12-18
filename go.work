@@ -4,6 +4,7 @@ use (
 	./genclientex
 	./simple-echo-wire
 	./simple-fx
+	./simple-fx-graphql-go
 	./simple-google-wire
 	./simple-gqlgen-chi
 )
