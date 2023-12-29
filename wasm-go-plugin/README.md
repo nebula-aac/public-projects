@@ -1,0 +1,1 @@
+Change to `greeting` and run `protoc --go-plugin_out=. --go-plugin_opt=paths=source_relative greeter.proto`
