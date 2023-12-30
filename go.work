@@ -8,5 +8,6 @@ use (
 	./simple-fx-graphql-go
 	./simple-google-wire
 	./simple-gqlgen-chi
+	./subgraph-go-gqlgen-app
 	./wasm-go-plugin
 )
