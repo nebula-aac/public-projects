@@ -14,3 +14,24 @@ cd internal/pkg/db/migrations/
 CREATE TABLE Users (ID INT NOT NULL UNIQUE AUTO_INCREMENT, Username VARCHAR (127) NOT NULL UNIQUE, Password VARCHAR (127) NOT NULL, PRIMARY KEY (ID));
 CREATE TABLE Links (ID INT NOT NULL UNIQUE AUTO_INCREMENT, Title VARCHAR (255), Address VARCHAR (255), UserID INT, FOREIGN KEY (UserID) REFERENCES Users(ID), PRIMARY KEY (ID));
 ```
+
+```gql
+mutation {
+  createUser(input: {username: "user2", password: "123"})
+}
+```
+
+```
+{
+  "data": {
+    "createUser": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDQwMzgzODYsInVzZXJuYW1lIjoidXNlcjIifQ.YgGq1hyCEQyo-LzXxa5dv5gD2AQ1jUGBUTFni_5Fll4"
+  }
+}
+```
+
+Copy the `Authorization` from creating the user above
+```json
+{
+  "Authorization": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDQwMzgzODYsInVzZXJuYW1lIjoidXNlcjIifQ.YgGq1hyCEQyo-LzXxa5dv5gD2AQ1jUGBUTFni_5Fll4"
+}
+```
