@@ -3,7 +3,7 @@ module github.com/nebula-aac/public-projects/simple-gqlgen-chi
 go 1.21.0
 
 require (
-	github.com/99designs/gqlgen v0.17.41
+	github.com/99designs/gqlgen v0.17.42
 	github.com/go-chi/chi/v5 v5.0.11
 	github.com/vektah/gqlparser/v2 v2.5.10
 )

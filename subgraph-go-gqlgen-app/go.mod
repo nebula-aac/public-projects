@@ -3,7 +3,7 @@ module github.com/nebula-aac/public-projects
 go 1.19
 
 require (
-	github.com/99designs/gqlgen v0.17.41
+	github.com/99designs/gqlgen v0.17.42
 	github.com/go-chi/chi/v5 v5.0.11
 	github.com/hashicorp/go-plugin v1.6.0
 	github.com/rs/cors v1.10.1
