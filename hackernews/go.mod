@@ -4,10 +4,12 @@ go 1.21.5
 
 require (
 	github.com/99designs/gqlgen v0.17.42
+	github.com/dgrijalva/jwt-go v3.2.0+incompatible
 	github.com/go-chi/chi/v5 v5.0.11
 	github.com/go-sql-driver/mysql v1.7.1
 	github.com/golang-migrate/migrate v3.5.4+incompatible
 	github.com/vektah/gqlparser/v2 v2.5.10
+	golang.org/x/crypto v0.16.0
 )
 
 require (
