@@ -4,6 +4,8 @@ use (
 	./genclientex
 	./hackernews
 	./hashicorp-go-plugin
+	./kratos-oathkeeper-kong
+	./kratos-oathkeeper-kong/hello
 	./simple-echo-wire
 	./simple-fx
 	./simple-fx-graphql-go
