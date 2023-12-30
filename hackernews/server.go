@@ -9,7 +9,7 @@ import (
 	"github.com/99designs/gqlgen/graphql/playground"
 	"github.com/go-chi/chi/v5"
 	"github.com/nebula-aac/public-projects/hackernews/graph"
-	database "github.com/nebula-aac/public-projects/hackernews/internal/pkg/db/migrations/mysql"
+	database "github.com/nebula-aac/public-projects/hackernews/internal/pkg/db/mysql"
 )
 
 const defaultPort = "8080"
