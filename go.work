@@ -6,6 +6,7 @@ use (
 	./hashicorp-go-plugin
 	./kratos-oathkeeper-kong
 	./kratos-oathkeeper-kong/hello
+	./ory-example
 	./simple-echo-wire
 	./simple-fx
 	./simple-fx-graphql-go
